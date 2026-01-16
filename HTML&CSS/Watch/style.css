@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 10;
+
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #D4AF37; 
+    letter-spacing: 3px;
+}
+
+.navi a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navi a:hover{
+    color : #D4AF37;
+}
+
+header > a {
+    text-decoration: none; 
+    padding: 10px 22px;
+    background-color: #D4AF37; 
+    color: #000; 
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+header > a:hover{
+    background-color: #e3c45a;
+    transform: scale(1.05);
+}
+
+section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+
+}
+.hero-text{
+    max-width: 500px;
+}
+.hero-text h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #FFD700;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 20px 0;
+}
+.btn{
+    text-decoration: none;
+    background-color: #FFD700;
+    color : black ;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    background: black;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    transform: scale(1.02);
+}
+.hero-img {
+    width: 450px;
+    left: 300px;
+    filter: drop-shadow(0 0 40px gold);
+}
+.features{
+    width: 100%;
+    padding: 80px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    color: gold;
+}
+    
+
+.feature{
+    padding: 30px;
+    background: #111;
+    border: 1px solid gold;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.4s;
+}
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gold;
+}
+
+.pricing {
+    padding: 80px 40px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: gold;
+}
+
+.pricing-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background: #111;
+    padding: 30px;
+    width: 280px;
+    border: 1px solid gold;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gold;
+}
+
+.price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: gold;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+.btn {
+    background: gold;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+.pricing-sub{
+    font-size: 1rem;
+    color: gold;
+}
+
+.footer{
+    background: #000 ;
+    color : #fff ;
+    padding: 60px 20px 20px;
+}
+
+.footer-content{
+    display: flex ;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-brand h2 {
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 10px;
+}
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 6px 0;
+    display: block;
+    transition: 0.3s;
+}
+.footer-socials a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 6px 0;
+    display: block;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: gold;
+}
+.footer-socials a:hover {
+    color: gold;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    padding-top: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .features {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-img {
+        display: none;
+    }
+    header {
+        padding: 0 20px;
+    }
+    
+    
+}

@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 60%;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 20px;
+    grid-template-areas: nav nav nav
+                         side main main
+                         foot foot foot;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid gray;
+    padding: 40px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+}
+.box1{
+
+    background-color: lightcoral;
+}

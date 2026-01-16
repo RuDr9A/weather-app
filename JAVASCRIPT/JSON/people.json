@@ -1,0 +1,15 @@
+[
+    {
+        "name" : "Rudra" ,
+        "age" : 22 ,
+        "hobbies" : ["Football","Gaming"]
+    },
+
+    {
+        "name" : "Avijit" ,
+        "age" : 21 ,
+        "hobbies" : ["Sleeping","Reading"]
+    }
+
+
+]
